@@ -1,0 +1,66 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+
+nav {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    top: 10px;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+        display: flex;  
+        height: 35px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        color: $black;
+
+        &:hover {
+            transition: 0.2s;
+            
+            .text__menu {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+p {
+    padding-left: 9px;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav li {
+    a.nuxt-link-exact-active  {
+        color: blue;
+    }
+
+    a.nuxt-link-active  {
+        color: blue;
+    }
+}

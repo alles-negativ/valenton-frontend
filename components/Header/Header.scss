@@ -1,0 +1,38 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+.header__wrapper {
+    width: 100%;
+    margin-bottom: $marginHeaderMedium;
+
+        @include tablet {
+            margin-bottom: $marginHeader;
+        }
+
+        @include desktop {
+            margin-bottom: $marginHeaderLarge;
+        }
+
+        @include desktopXL {
+            margin-bottom: $marginHeaderXLarge;
+        }
+
+    .header {
+        height: auto;
+
+        @include tablet {
+            height: auto;
+        }
+
+        @include desktop {
+            height: auto;
+        }
+
+        @include desktopXL {
+            height: auto;    
+        }
+    }     
+}
+
+  

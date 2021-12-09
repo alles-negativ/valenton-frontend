@@ -1,0 +1,62 @@
+/* 
+fonts import
+this file is being imported into global.scss
+*/
+
+/* Kessler und Söhne */
+
+@font-face {
+    font-family: 'Grotzec Cond';
+    src: url('../fonts/GrotzecCond-Light.woff2') format('woff2'),
+        url('../fonts/GrotzecCond-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grotzec Cond';
+    src: url('../fonts/GrotzecCond-Regular.woff2') format('woff2'),
+        url('../fonts/GrotzecCond-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grotzec Cond';
+    src: url('../fonts/GrotzecCond-Black.woff2') format('woff2'),
+        url('../fonts/GrotzecCond-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grotzec Cond';
+    src: url('../fonts/GrotzecCond-Demibold.woff2') format('woff2'),
+        url('../fonts/GrotzecCond-Demibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grotzec Cond';
+    src: url('../fonts/GrotzecCond-Bold.woff2') format('woff2'),
+        url('../fonts/GrotzecCond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Valenton Titles */
+
+@font-face {
+    font-family: 'Industria LT Std';
+    src: url('../fonts/IndustriaLTStd-Solid.woff2') format('woff2'),
+        url('../fonts/IndustriaLTStd-Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

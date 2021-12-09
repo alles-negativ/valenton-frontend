@@ -1,0 +1,82 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+footer {
+  margin-top: $marginLarge;
+
+  @include tablet {
+        margin-top: $marginXLarge;
+    }
+
+    @include desktop {
+        margin-top: $marginXXLarge;
+    }
+
+    @include desktopXL {
+        margin-top: $marginXXLarge;
+    }
+}
+
+a {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $white;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  height: auto;
+  color: $white;
+  background-color: $black;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+
+    @include tablet {
+        flex-wrap: wrap;
+    }
+
+    @include desktop {
+        flex-flow: row wrap;
+    }
+
+    @include desktopXL {
+        flex-flow: row wrap;
+    }
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: $contentpadding;
+
+    @include tablet {
+        width: 100%;
+        padding-left: $contentpaddingLarge;
+    }
+
+    @include desktop {
+        width: 100%;
+        padding-left: $contentpaddingLarge;
+    }
+
+    @include desktopXL {
+        width: 100%;
+        padding-left: $contentpaddingLarge;
+    }
+
+  .text__small {
+    margin-right: 0.5em;
+  }
+}
