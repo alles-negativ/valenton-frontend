@@ -7,8 +7,8 @@
 
 .accordion {
     width: 100%;
-    border-top: thin solid $black;
-    border-bottom: thin solid $black;
+    border-top: thin solid $white;
+    border-bottom: thin solid $white;
     margin-top: -1px;
     padding-top: $contentpadding;
     padding-bottom: $contentpadding;
@@ -34,6 +34,7 @@
                 font-weight: 300;
                 transition-duration: 200ms;
                 transform-origin: 45%;
+                color: $white;
         }
     }
 
@@ -98,8 +99,8 @@
     right: 0px;
     position: absolute;
     border: solid 3px transparent;
-    border-top-color: $black;
-    border-left-color: $black;
+    border-top-color: $white;
+    border-left-color: $white;
     border-radius: 50%;
   }
   

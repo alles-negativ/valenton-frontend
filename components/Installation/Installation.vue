@@ -1,6 +1,6 @@
 <template>
     <div class="accordion__wrapper">
-        <h3>{{ info.planungtitle }}</h3>
+        <h3>{{ info.installationentitle }}</h3>
         <div v-for="element in data" :key="element.id">
             <Accordion>
              <template v-slot:title>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    name: 'Planung',
+    name: 'Installation',
 
     data() {
         return {
@@ -30,7 +30,7 @@ export default {
     },
     async fetch() {
         const { json: data } = await this.$kirby.find({
-            "query": "page('planung').children",
+            "query": "page('installation').children",
             "select": {
                 "title": true,
                 "introtext": true,
@@ -49,10 +49,10 @@ export default {
         this.data = data
 
         const { json: info } = await this.$kirby.find({
-            "query": "page('planung')",
+            "query": "page('installation')",
             "select": {
-                "planungtitle": true,
-                "planungtext": true
+                "installationentitle": true,
+                "installationentext": true
             }
         })
         this.info = info
@@ -61,5 +61,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @use "Planung";
+    @use "Installation";
 </style>

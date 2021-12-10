@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-    font-family: Industria LT Std, sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 50px;
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-    font-family: Industria LT Std, sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
@@ -53,10 +53,11 @@ h3 {
     }
 }
 
-p, button {
+p {
     font-family: sans-serif;
     font-style: normal;
     line-height: 26px;
+    color: white;
 }
 
 .text {
@@ -70,6 +71,7 @@ p, button {
 
     &__big {
         font-weight: 500;
+        color: $white;
 
         @include tablet {
             font-size: 20px;

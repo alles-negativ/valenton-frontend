@@ -4,6 +4,7 @@
       <h1>{{ page.content.contenttitle }}</h1>
       <div v-html="page.content.contenttext"></div>
       <Planung />
+      <Installation />
     </div>
   </main>
 </template>
