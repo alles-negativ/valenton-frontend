@@ -6,7 +6,7 @@ Global definitions of typography
 @use "colors" as *;
 
 h1 {
-    font-family: Industria LT Std, sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 35px;
@@ -53,11 +53,14 @@ h3 {
     }
 }
 
+div > p {
+    color: $white;
+}
+
 p {
     font-family: sans-serif;
     font-style: normal;
     line-height: 26px;
-    color: white;
 }
 
 .text {
@@ -145,7 +148,7 @@ p {
     }
 
     a:hover {
-        color: blue;
+        color: $red;
     }
 }
 
@@ -178,6 +181,6 @@ a {
     text-decoration: underline;
 
     &:hover {
-        color: blue;
+        color: $red;
     }
 }

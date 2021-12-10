@@ -2,7 +2,7 @@
 <div class="header__wrapper">
   <div class="header">
     <nuxt-link to="/">
-        <h1>LOGO</h1>
+        <img class="header__links--logo" src="/logo.svg" alt="Logo Valenton">
     </nuxt-link>  
   </div>
 </div>

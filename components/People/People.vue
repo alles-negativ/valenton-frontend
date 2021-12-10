@@ -4,6 +4,7 @@
             <li v-for="article in columns" :key="article.id" class="content">
                 <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
                 <h3>{{ article.title }}</h3>
+                <div class="text__big" v-html="article.introtext"></div>
                 <div class="text" v-html="article.contenttext"></div>
             </li>
         </ul>
@@ -26,6 +27,7 @@ export default {
             "select": {
                 "title": true,
                 "date": true,
+                "introtext": true,
                 "contenttext": true,
                 "contentimage": true,
                 "images": {

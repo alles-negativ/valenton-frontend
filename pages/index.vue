@@ -3,9 +3,9 @@
     <div class="grid">
       <h1>{{ page.content.contenttitle }}</h1>
       <div v-html="page.content.contenttext"></div>
-      <People />
-      <Rooms />
     </div>
+    <People />
+    <Rooms />
   </main>
 </template>
 

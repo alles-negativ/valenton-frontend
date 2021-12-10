@@ -38,10 +38,6 @@ nav {
 
         &:hover {
             transition: 0.2s;
-            
-            .text__menu {
-                text-decoration: underline;
-            }
         }
     }
 }
@@ -57,10 +53,10 @@ nav li a {
 
 nav li {
     a.nuxt-link-exact-active  {
-        color: blue;
+        color: $red;
     }
 
     a.nuxt-link-active  {
-        color: blue;
+        color: $red;
     }
 }
