@@ -1,11 +1,7 @@
-/**
- * If children of a component contains relative HTML links
- *  the mixins handles these as routes.
- */
 export default {
     head() {
         return {
-            titleTemplate: '%s - ' + this.page.content.title,
+            titleTemplate: '%s - ' + this.page.title,
             meta: this.meta
         }
     },
