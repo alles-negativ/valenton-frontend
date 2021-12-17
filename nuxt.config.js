@@ -67,7 +67,6 @@ export default {
   plugins: [
     '~plugins/nuxt-kirby-kql',
     '~/plugins/preview.client.js'
-
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
