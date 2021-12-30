@@ -1,9 +1,9 @@
 <template>
   <main id="content">
-    <div class="grid">
-      <h1>{{ page.content.contenttitle }}</h1>
-      <div v-html="page.content.contenttext"></div>
-    </div>
+    <div class="intro"> 
+      <h2>{{ page.content.contenttitle }}</h2>
+      <div class="text__home" v-html="page.content.contenttext"></div>
+    </div>  
     <People />
     <Rooms />
   </main>

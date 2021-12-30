@@ -2,6 +2,11 @@
     <nav>
         <div class="nav">
             <ul>
+                <li class="item">
+                    <nuxt-link :to="('/')">
+                        <p class="text__menu">FIRMA</p>
+                    </nuxt-link>
+                </li>
                 <li class="item" v-for="element in menu_elements" :key="element.id">
                     <nuxt-link :to="('/' + element.slug)">
                         <p class="text__menu">{{ element.title }}</p>

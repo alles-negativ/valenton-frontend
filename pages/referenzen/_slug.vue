@@ -1,10 +1,12 @@
 <template>
     <div>
+      <div class="carousel">
+        <div v-for="image in page.images" :key="image.id">
+            <nuxt-img class="carousel__image" :src="image.url" :alt="image.alt" />
+        </div>
+      </div>  
       <h1>{{page.title}}</h1>
       <h1>{{page.contenttext}}</h1>
-      <div v-for="image in page.images" :key="image.id">
-          <nuxt-img class="img" :src="image.url" :alt="image.alt" />
-      </div>
     </div>
 </template>
 

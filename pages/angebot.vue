@@ -2,7 +2,7 @@
   <main id="content">
     <div class="grid">
       <h1>{{ page.content.contenttitle }}</h1>
-      <div v-html="page.content.contenttext"></div>
+      <!-- <div v-html="page.content.contenttext"></div> -->
     </div>
     <Planung />
     <Installation />

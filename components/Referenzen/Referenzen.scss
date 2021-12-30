@@ -1,0 +1,57 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    @include desktopXL {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .content__info {
+        display: flex;
+    }
+
+    &:hover .content__image {
+        opacity: 0.3;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: none;
+        position: absolute;
+
+        &--text {
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+        }
+    }
+}

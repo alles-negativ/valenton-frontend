@@ -10,8 +10,12 @@
     border-top: thin solid $white;
     border-bottom: thin solid $white;
     margin-top: -1px;
-    padding-top: $contentpadding;
-    padding-bottom: $contentpadding;
+    // padding-top: $contentpadding;
+    // padding-bottom: $contentpadding;
+
+    &:hover {
+      background-color: $red;
+    }
 
         &__title {
             display: flex;
@@ -30,7 +34,7 @@
             }
 
             .plus {
-                font-size: 60px;
+                font-size: 55px;
                 font-weight: 300;
                 transition-duration: 200ms;
                 transform-origin: 45%;

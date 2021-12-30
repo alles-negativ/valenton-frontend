@@ -13,12 +13,12 @@ $marginLarge: 7.5em;
 $marginXLarge: 15em;
 $marginXXLarge: 20em;
 
-$marginHeader: 5em;
-$marginHeaderMedium: 10em;
-$marginHeaderLarge: 20em;
-$marginHeaderXLarge: 30em;
+$marginHeader: 15em;
+$marginHeaderMedium: 5em;
+$marginHeaderLarge: 5em;
+$marginHeaderXLarge: 5em;
 
-$logosize: 200px;
+$logosize: 100px;
 
 body {
     background-color: $black;
@@ -43,4 +43,12 @@ body {
         padding-left: $contentpaddingLarge;
         padding-right: $contentpaddingLarge;
     }
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
 }

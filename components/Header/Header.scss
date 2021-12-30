@@ -3,23 +3,30 @@
 @use "assets/css/main/main" as *;
 
 .header__wrapper {
+    display: flex;
     width: 100%;
-    margin-bottom: $marginHeaderMedium;
+    margin-bottom: $marginHeader;
 
         @include tablet {
             margin-bottom: $marginHeader;
         }
 
         @include desktop {
-            margin-bottom: $marginHeaderLarge;
+            margin-bottom: $marginHeader;
         }
 
         @include desktopXL {
-            margin-bottom: $marginHeaderXLarge;
+            margin-bottom: $marginHeader;
         }
 
     .header {
         height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        position: fixed;
+        background-color: $black;
+        border-bottom: thin solid $white;
 
         @include tablet {
             height: auto;
@@ -36,6 +43,9 @@
 
             &--logo {
                 width: $logosize;
+                margin-left: 30px;
+                margin-top: 15px;
+                margin-bottom: 15px;
             }
         }
     }     

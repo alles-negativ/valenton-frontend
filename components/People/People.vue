@@ -1,13 +1,13 @@
 <template>
     <div class="container"> 
-        <ul v-for="columns in sortedArticles" :key="columns.id" class="container__columns">
-            <li v-for="article in columns" :key="article.id" class="content">
-                <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
-                <h3>{{ article.title }}</h3>
-                <div class="text__big" v-html="article.introtext"></div>
+        <div v-for="article in articles" :key="article.id" class="content">
+            <h3 class="title">{{ article.title }}</h3>
+            <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
+            <div class="content__info">
+                <div class="intro text__big" v-html="article.introtext"></div>
                 <div class="text" v-html="article.contenttext"></div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -18,9 +18,9 @@ export default {
     data() {
         return {
             articles: [],
-            numberOfColumns: 1
         }
     },
+
     async fetch() {
         const { json: data } = await this.$kirby.find({
             "query": "page('home').children",
@@ -41,46 +41,7 @@ export default {
             }
         })
         this.articles = data
-    },
-
-    methods: {
-        getScreen: function(){
-            if (process.client) {
-                if (window.innerWidth < 759.98) {
-                    this.numberOfColumns = 1
-                }
-                else if(window.innerWidth > 1439.98 ) {
-                    this.numberOfColumns = 3
-                }
-                else {
-                    this.numberOfColumns = 2
-                }
-           } 
-        }
-    },
-
-    computed: {
-        sortedArticles(){
-            var output = []
-            var input = this.articles.sort(function(a,b){
-                return new Date(b.date) - new Date(a.date);
-            })
-            for (var i=0; i<this.numberOfColumns; i++) {
-                output[i] = []
-                for (var j=i; j<input.length; j=j+this.numberOfColumns) {
-                    output[i].push(input[j]) 
-                }
-            }
-            return output
-        }
-    },
-
-    mounted() {
-        this.getScreen()
-        window.addEventListener('resize', () => {
-        this.getScreen()
-    })
-  },
+    }
 }
 </script>
 

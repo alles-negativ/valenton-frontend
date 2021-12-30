@@ -3,51 +3,57 @@
 @use "assets/css/main/main" as *;
 
 .container {
-    display: flex;
-
-    &__columns {
+    display: grid;
     width: 100%;
-    margin-bottom: 1em;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin-top: 5em;
 
     @include tablet {
-        width: 100%;
-        columns: 1;
-        margin-right: 2em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
     }
 
     @include desktop {
-        width: 50%;
-        columns: 1;
-        margin-right: 3em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
     }
 
     @include desktopXL {
-        width: 33%;
-        columns: 1;
-        margin-right: 3em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 5em;
+    border-top: thin solid $white;
+    border-bottom: thin solid $white;
+
+    &__info {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 
-        .content {
-            display: flex;
-            flex-flow: column nowrap;
-            width: 100%;
-            page-break-inside: avoid;
-            margin-bottom: 5em;
-            border-bottom: thin solid $white;
-        }
-    }    
-}
+    .title {
+        color: $white;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
 
-h3 {
-    margin-top: 1em;
-}
+    .intro {
+        width: 100%;
+        color: $white;
+    }
 
-p {
-    margin-bottom: 1.5em;
-}
-
-.text {
-    margin-bottom: 1.5em;
+    .text {
+        width: 100%;
+    }
 }
 
 img {

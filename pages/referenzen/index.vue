@@ -1,8 +1,6 @@
 <template>
   <main id="content">
-    <div class="grid">
       <Referenzen />
-    </div>
   </main>
 </template>
 

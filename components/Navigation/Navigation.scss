@@ -10,12 +10,11 @@ nav {
 }
 
 .nav {
-    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    top: 10px;
+    margin-top: 15px;
 
     ul {
         list-style-type: none;
@@ -30,7 +29,7 @@ nav {
 
     .item {
         display: flex;  
-        height: 35px;
+        height: 100px;
         width: auto;
         justify-content: center;
         align-items: center;
@@ -43,7 +42,7 @@ nav {
 }
 
 p {
-    padding-left: 9px;
+    padding-left: 30px;
 }
 
 nav li a {
@@ -53,10 +52,6 @@ nav li a {
 
 nav li {
     a.nuxt-link-exact-active  {
-        color: $red;
-    }
-
-    a.nuxt-link-active  {
         color: $red;
     }
 }

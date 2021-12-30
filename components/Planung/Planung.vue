@@ -1,19 +1,21 @@
 <template>
     <div class="accordion__wrapper">
-        <h3>{{ info.planungtitle }}</h3>
-        <div v-for="element in data" :key="element.id">
-            <Accordion>
-             <template v-slot:title>
-                <h3 class="title"> {{ element.title }} </h3>
-              </template>
-              <template v-slot:body>
-                <div class="text__big" slot="introtext" v-html="element.introtext"></div>
-                <!-- <div class="text" slot="contenttext" v-html="element.contenttext"></div> -->
-                <!-- <div class="image" slot="image">
-                    <nuxt-img class="image image__img" :src="element.images[0].url" :alt="element.images[0].alt" />
-                </div> -->
-              </template>
-          </Accordion>
+        <h3 class="main__title">{{ info.planungtitle }}</h3>
+        <div class="accordion__grid">
+            <div class="accordion__holder" v-for="element in data" :key="element.id">
+                <Accordion>
+                <template v-slot:title>
+                    <h3 class="title"> {{ element.title }} </h3>
+                </template>
+                <template v-slot:body>
+                    <div class="text__big" slot="introtext" v-html="element.introtext"></div>
+                    <!-- <div class="text" slot="contenttext" v-html="element.contenttext"></div> -->
+                    <!-- <div class="image" slot="image">
+                        <nuxt-img class="image image__img" :src="element.images[0].url" :alt="element.images[0].alt" />
+                    </div> -->
+                </template>
+            </Accordion>
+            </div>
         </div>
     </div>
 </template>
