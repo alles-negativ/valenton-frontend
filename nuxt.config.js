@@ -66,7 +66,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/nuxt-kirby-kql',
-    '~/plugins/preview.client.js'
+    '~/plugins/preview.client.js',
+    { src: '~/plugins/VueFlickity.js', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
