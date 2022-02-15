@@ -1,6 +1,8 @@
 @use "assets/css/main/colors" as *;
 @use "assets/css/main/breakpoints" as *;
 
+
+
 .container {
     display: grid;
     width: 100%;
@@ -18,7 +20,7 @@
     }
 
     @include desktopXL {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
     }
 }
@@ -54,4 +56,33 @@
             z-index: 1;
         }
     }
+}
+
+.site__title {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+
+    @include desktopXL {
+      display: block;
+  } 
+
+    &--text {
+      font-family: Industria LT Std, sans-serif;
+      font-weight: 500;
+      font-size: 20vw;
+      text-transform: uppercase;
+      opacity: 0.5;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+    }
+}
+
+.image__hero {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  background-color: grey;
+  margin-bottom: 5em;
 }

@@ -1,11 +1,17 @@
 <template>
-  <main id="content">
-    <div class="grid">
-      <h1>{{ page.content.contenttitle }}</h1>
-      <!-- <div v-html="page.content.contenttext"></div> -->
+  <main>
+    <div class="image__hero">
+        <div v-for="image in page.heroimages" :key="image">
+              <nuxt-img class="gallery_wrapper__image" :src="image.url" />
+        </div>
     </div>
-    <Planung />
-    <Installation />
+    <div class="site__title">
+        <h1 class="site__title--text">{{ page.title }}</h1>
+    </div>
+    <div class="wrapper"> 
+      <Planung />
+      <Installation />
+    </div>
   </main>
 </template>
 
@@ -24,3 +30,7 @@ export default {
   } 
 }
 </script>
+
+<style lang="scss" scoped>
+   @use "Sites"; 
+</style>

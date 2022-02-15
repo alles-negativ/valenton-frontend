@@ -1,12 +1,16 @@
 <template>
-  <main id="content">
+  <div>
     <div class="intro"> 
-      <h2>{{ page.content.contenttitle }}</h2>
-      <div class="text__home" v-html="page.content.contenttext"></div>
-    </div>  
-    <People />
-    <Rooms />
-  </main>
+        <h2>{{ page.content.contenttitle }}</h2>
+        <div class="text__home" v-html="page.content.contenttext"></div>
+    </div> 
+    <div class="site__title" id="home">
+        <h1 class="site__title--text">Firma</h1>
+    </div>
+    <div class="wrapper"> 
+      <People />
+    </div>
+  </div>  
 </template>
 
 
@@ -24,3 +28,7 @@ export default {
   } 
 }
 </script>
+
+<style lang="scss" scoped>
+   @use "Sites"; 
+</style>

@@ -1,16 +1,9 @@
 @use "assets/css/main/colors" as *;
 @use "assets/css/main/breakpoints" as *;
 
-.carousel {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    overflow: hidden;
-    padding-left: -3em;
+.gallery_wrapper {
 
     &__image {
-        width: auto;
         height: 1000px;
-        object-fit: cover;
     }
 }

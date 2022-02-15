@@ -6,14 +6,14 @@ Global definitions for overreaching elements
 @use "colors" as *;
 
 $contentpadding: 0.75em;
-$contentpaddingLarge: 3em;
+$contentpaddingLarge: 18vw;
 
 $margin: 5em;
 $marginLarge: 7.5em;
 $marginXLarge: 15em;
 $marginXXLarge: 20em;
 
-$marginHeader: 15em;
+$marginHeader: 7em;
 $marginHeaderMedium: 5em;
 $marginHeaderLarge: 5em;
 $marginHeaderXLarge: 5em;
@@ -22,6 +22,11 @@ $logosize: 100px;
 
 body {
     background-color: $black;
+    height: 100%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .wrapper {
@@ -30,8 +35,8 @@ body {
    padding-right: $contentpadding;
 
     @include tablet {
-        padding-left: $contentpaddingLarge;
-        padding-right: $contentpaddingLarge;
+        padding-left: $contentpadding;
+        padding-right: $contentpadding;
     }
 
     @include desktop {

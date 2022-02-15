@@ -85,7 +85,6 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
-    line-height: 26px;
     text-decoration: none;
     color: $white;
 
@@ -159,9 +158,21 @@ p {
     &__menu {
         font-family: Industria LT Std, sans-serif;
         font-weight: 500;
-        font-size: 80px;
-        line-height: auto;
+        font-size: 18vw;
+        line-height: normal;
         text-transform: uppercase;
+
+        @include tablet {
+            font-size: 18vw;
+        }
+
+        @include desktop {
+            font-size: 14vw;
+        }
+
+        @include desktopXL {
+            font-size: 12vw;
+        }
     }
 
     &__home {
