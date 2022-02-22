@@ -1,0 +1,43 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+
+.gallery_wrapper {
+    pointer-events: none;
+
+    &__image {
+        height: 300px;
+
+        @include tablet {
+            height: 400px;
+        }
+    
+        @include desktop {
+            height: 500px;
+        }
+    
+        @include desktopXL {
+            height: 500px;
+        }
+    }
+
+    ::v-deep.flickity-enabled {
+        z-index: -1;
+    }
+
+    ::v-deep.flickity-viewport {
+        height: 300px;
+        width: 100%;
+
+        @include tablet {
+            height: 400px;
+        }
+    
+        @include desktop {
+            height: 500px;
+        }
+    
+        @include desktopXL {
+            height: 500px;
+        }
+    }
+}
