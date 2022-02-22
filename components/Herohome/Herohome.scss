@@ -1,0 +1,30 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 95vh;
+    margin-bottom: 5em;
+  
+    &__text {
+      margin-top: 2em;
+    }
+  
+    &__hero {
+      display: flex;
+      position: absolute;
+      height: 95vh;
+      width: 100%;
+      background-color: grey;
+      z-index: -1;
+
+      img {
+          object-fit: cover;
+          width: 100%;
+      }
+    }
+  }
