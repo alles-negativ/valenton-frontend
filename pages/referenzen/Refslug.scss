@@ -3,6 +3,7 @@
 
 .gallery_wrapper {
     height: 300px;
+    margin-bottom: 20px;
 
         @include tablet {
             height: 400px;

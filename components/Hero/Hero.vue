@@ -2,9 +2,9 @@
     <div class="gallery_wrapper">
         <no-ssr>
             <Flickity ref="flickity" :options="flickityOptions">
-            <div v-for="image in angebote.images" :key="image.key">
-                <nuxt-img class="gallery_wrapper__image" :src="image.url" :alt="image.alt" />
-            </div>
+                <div v-for="image in angebote.images" :key="image.key">
+                    <nuxt-img class="gallery_wrapper__image" :src="image.url" :alt="image.alt" />
+                </div>
             </Flickity>
         </no-ssr>
     </div>  

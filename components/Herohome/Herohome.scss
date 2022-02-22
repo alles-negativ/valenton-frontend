@@ -10,16 +10,14 @@
     height: 95vh;
     margin-bottom: 5em;
   
-    &__text {
-      margin-top: 2em;
+    h2 {
+      text-align: center;
     }
-  
     &__hero {
       display: flex;
       position: absolute;
       height: 95vh;
       width: 100%;
-      background-color: grey;
       z-index: -1;
 
       img {

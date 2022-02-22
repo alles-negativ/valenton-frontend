@@ -40,13 +40,11 @@ h2 {
     @include desktop {
         font-size: 98px;
         line-height: 100px;
-        text-align: center;
     }
     
     @include desktopXL {
         font-size: 98px;
         line-height: 100px;
-        text-align: center;
     } 
 }
 
