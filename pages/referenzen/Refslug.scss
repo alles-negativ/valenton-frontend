@@ -2,8 +2,62 @@
 @use "assets/css/main/breakpoints" as *;
 
 .gallery_wrapper {
+    height: 300px;
+
+        @include tablet {
+            height: 400px;
+        }
+    
+        @include desktop {
+            height: 500px;
+        }
+    
+        @include desktopXL {
+            height: 500px;
+        }
 
     &__image {
-        height: 1000px;
+        height: 300px;
+
+        @include tablet {
+            height: 400px;
+        }
+    
+        @include desktop {
+            height: 500px;
+        }
+    
+        @include desktopXL {
+            height: 500px;
+        }
+    }
+
+    ::v-deep.flickity-enabled {
+        z-index: -1;
+    }
+}
+
+.site__title {
+    display: none;
+    left: 0;
+    z-index: -1;
+    width: 16vw;
+
+    @include desktop {
+        display: block;
+    } 
+
+    @include desktopXL {
+      display: block;
+  } 
+
+    &--text {
+      font-family: Industria LT Std, sans-serif;
+      font-weight: 500;
+      font-size: 20vw;
+      text-transform: uppercase;
+      opacity: 0.5;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
     }
 }

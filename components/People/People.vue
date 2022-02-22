@@ -1,13 +1,15 @@
 <template>
-    <div class="container"> 
-        <div v-for="article in articles" :key="article.id" class="content">
-            <h3 class="title">{{ article.title }}</h3>
-            <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
-            <div class="content__info">
-                <div class="intro text__big" v-html="article.introtext"></div>
-                <div class="text" v-html="article.contenttext"></div>
-            </div>
-        </div>
+    <div class="container">
+        <ul class="container__columns">
+            <li v-for="article in articles" :key="article.id" class="content">
+                <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
+                <div class="content__info">
+                    <h3 class="title">{{ article.title }}</h3>
+                    <div class="text" v-html="article.contenttext"></div>
+                    <a class="text mail" href="mailto:hello@alles-negativ-fake.ch">{{ article.contactmail }}</a>
+                </div>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -29,6 +31,7 @@ export default {
                 "date": true,
                 "introtext": true,
                 "contenttext": true,
+                "contactmail": true,
                 "contentimage": true,
                 "images": {
                     "query": 'page.files',

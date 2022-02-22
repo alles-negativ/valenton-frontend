@@ -17,9 +17,9 @@
             </div>
         </div>
         <div class="openbtn" @click="openNavigation">
-            <span ></span>
-            <span ></span>
-            <span ></span>
+            <span :class="{ 'turnR': showNavbar, '': !showNavbar}"></span>
+            <span :class="{ 'hide': showNavbar, '': !showNavbar}"></span>
+            <span :class="{ 'turnL': showNavbar, '': !showNavbar}"></span>
         </div>       
     </nav>
 </template>

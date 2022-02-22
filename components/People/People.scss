@@ -2,42 +2,78 @@
 @use "assets/css/main/breakpoints" as *;
 @use "assets/css/main/main" as *;
 
+$gridLarge: calc(26vw - 20px);
+$gridMedium: calc(40vw - 15px);
+
 .container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    margin-top: 5em;
 
-    @include tablet {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-    }
+    &__columns {
+        margin-bottom: 0em;
+        display: flex;
+        flex-flow: row wrap;
 
-    @include desktop {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
+        @include mobile {
+            justify-content: center;
+        }
     }
-
-    @include desktopXL {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-    }
-}
+}   
 
 .content {
     display: flex;
     flex-flow: column wrap;
     margin-bottom: 5em;
-    border-top: thin solid $white;
-    border-bottom: thin solid $white;
+    width: auto;
+
+    @include tablet {
+        margin-right: 30px;
+
+        &:nth-child(2n) {
+            margin-right: 0px;
+        }
+    }
+
+    @include desktop {
+        margin-right: 30px;
+
+        &:nth-child(3n) {
+            margin-right: 0px;
+        }
+    }
+
+    @include desktopXL {
+        margin-right: 30px;
+
+        &:nth-child(3n) {
+            margin-right: 0px;
+        }
+    }
 
     &__info {
         display: flex;
         flex-flow: row wrap;
         width: 100%;
         padding-top: 0.5em;
+        padding-left: 0.5em;
         padding-bottom: 0.5em;
+        width: 80vw;
+
+        @include tablet {
+            max-width: 1000px;
+            min-width: 200px;
+            width: $gridMedium;
+        }
+    
+        @include desktop {
+            max-width: 1000px;
+            min-width: 200px;
+            width: $gridLarge;
+        }
+    
+        @include desktopXL {
+            max-width: 1000px;
+            min-width: 200px;
+            width: $gridLarge;
+        }
     }
 
     .title {
@@ -48,11 +84,14 @@
 
     .intro {
         width: 100%;
-        color: $white;
     }
 
     .text {
-        width: 100%;
+        width: 90%;
+    }
+
+    .mail {
+        margin-top: 30px;
     }
 }
 
@@ -60,19 +99,27 @@ img {
     width: 100%;
     height: 500px;
     object-fit: cover;
+    width: 80vw;
+    height: 80vw;
 
     @include tablet {
-        width: 100%;
-        height: 500px;
+        max-width: 1000px;
+        min-width: 200px;
+        width: $gridMedium;
+        height: $gridMedium;
     }
 
     @include desktop {
-        width: 100%;
-        height: 500px;
+        max-width: 1000px;
+        min-width: 200px;
+        width: $gridLarge;
+        height: $gridLarge;
     }
 
     @include desktopXL {
-        width: 100%;
-        height: 500px;
+        max-width: 1000px;
+        min-width: 200px;
+        width: $gridLarge;
+        height: $gridLarge;
     }
 }

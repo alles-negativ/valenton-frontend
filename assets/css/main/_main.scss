@@ -23,6 +23,7 @@ $logosize: 100px;
 body {
     background-color: $black;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .overflow-hidden {
@@ -30,30 +31,26 @@ body {
 }
 
 .wrapper {
-   margin-bottom: 10em;
-   padding-left: $contentpadding;
-   padding-right: $contentpadding;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
 
     @include tablet {
-        padding-left: $contentpadding;
-        padding-right: $contentpadding;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     @include desktop {
-        padding-left: $contentpaddingLarge;
-        padding-right: $contentpaddingLarge;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     @include desktopXL {
-        padding-left: $contentpaddingLarge;
-        padding-right: $contentpaddingLarge;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
-}
 
-.intro {
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    height: auto;
+    &__ref {
+        display: flex;
+    }
 }

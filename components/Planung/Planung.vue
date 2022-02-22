@@ -5,7 +5,7 @@
             <div class="accordion__holder" v-for="element in data" :key="element.id">
                 <Accordion>
                 <template v-slot:title>
-                    <h3 class="title"> {{ element.title }} </h3>
+                    <p class="title text__big"> {{ element.title }} </p>
                 </template>
                 <template v-slot:body>
                     <div class="text__big" slot="introtext" v-html="element.introtext"></div>

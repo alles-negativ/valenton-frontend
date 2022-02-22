@@ -1,23 +1,21 @@
 <template>
     <div>
-        <div class="image__hero">
-        </div>
-        <div class="site__title">
-            <h1 class="site__title--text">Referenzen</h1>
-        </div>
-        <div class="wrapper"> 
-            <div class="container">
-                <div v-for="reference in references" :key="reference.id">
-                    <nuxt-link class="content" :to="$route.path + '/' + reference.slug">
-                        <div class="content__info">
-                            <div class="content__info--text">
-                                <h3>{{ reference.title }}</h3>
-                                <div class="text__big" v-html="reference.introtext"></div>
-                                <div class="text" v-html="reference.contenttext"></div>
-                            </div> 
-                        </div>
-                        <nuxt-img class="content__image" :src="reference.images[0].url" :alt="reference.images[0].alt" />
-                    </nuxt-link>
+        <div class="wrapper__ref">
+            <div class="site__title">
+                <h1 class="site__title--text">Referenzen</h1>
+            </div>
+            <div class="wrapper"> 
+                <div class="container">
+                    <div v-for="reference in references" :key="reference.id">
+                        <nuxt-link class="content" :to="$route.path + '/' + reference.slug">
+                            <div class="content__info">
+                                <div class="content__info--text">
+                                    <h3>{{ reference.title }}</h3>
+                                </div> 
+                            </div>
+                            <nuxt-img class="content__image" :src="reference.images[0].url" :alt="reference.images[0].alt" />
+                        </nuxt-link>
+                    </div>
                 </div>
             </div>
         </div>

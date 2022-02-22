@@ -1,16 +1,14 @@
 <template>
   <main>
-    <div class="image__hero">
-        <div v-for="image in page.heroimages" :key="image">
-              <nuxt-img class="gallery_wrapper__image" :src="image.url" />
-        </div>
-    </div>
-    <div class="site__title">
-        <h1 class="site__title--text">{{ page.title }}</h1>
-    </div>
-    <div class="wrapper"> 
-      <Planung />
-      <Installation />
+    <Hero />
+    <div class="wrapper__ref">
+      <div class="site__title">
+          <h1 class="site__title--text">{{ page.title }}</h1>
+      </div>  
+      <div class="wrapper"> 
+        <Planung />
+        <Installation />
+      </div>
     </div>
   </main>
 </template>

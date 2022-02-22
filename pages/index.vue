@@ -1,15 +1,14 @@
 <template>
   <div>
-    <div class="intro"> 
-        <h2>{{ page.content.contenttitle }}</h2>
-        <div class="text__home" v-html="page.content.contenttext"></div>
-    </div> 
-    <div class="site__title" id="home">
-        <h1 class="site__title--text">Firma</h1>
-    </div>
-    <div class="wrapper"> 
-      <People />
-    </div>
+    <Herohome />
+    <div class="wrapper__ref">
+      <div class="site__title" id="home">
+          <h1 class="site__title--text">Firma</h1>
+      </div>
+      <div class="wrapper"> 
+        <People />
+      </div>
+    </div>    
   </div>  
 </template>
 
@@ -25,7 +24,7 @@ export default {
       "query": "page('home')"
     })
     return { page }
-  } 
+  },
 }
 </script>
 

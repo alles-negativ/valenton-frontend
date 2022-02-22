@@ -56,22 +56,30 @@ h3 {
     font-style: normal;
     font-size: 30px;
     color: $white;
+    letter-spacing: 0.6px;
 
     @include tablet {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     @include desktop {
-            font-size: 40px;
+            font-size: 30px;
     }
 
     @include desktopXL {
-            font-size: 40px;
+            font-size: 30px;
+    }
+}
+
+a > h3 {
+    &:hover {
+        color: $red;
     }
 }
 
 div > p {
     color: $white;
+    letter-spacing: 0.2px;
 }
 
 p {

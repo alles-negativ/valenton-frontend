@@ -5,27 +5,26 @@
 .header__wrapper {
     display: flex;
     width: 100%;
-    margin-bottom: $marginHeader;
+    height: 5vh;
+    // margin-bottom: $marginHeader;
 
-        @include tablet {
-            margin-bottom: $marginHeader;
-        }
+    //     @include tablet {
+    //         margin-bottom: $marginHeader;
+    //     }
 
-        @include desktop {
-            margin-bottom: $marginHeader;
-        }
+    //     @include desktop {
+    //         margin-bottom: $marginHeader;
+    //     }
 
-        @include desktopXL {
-            margin-bottom: $marginHeader;
-        }
+    //     @include desktopXL {
+    //         margin-bottom: $marginHeader;
+    //     }
 
     .header {
-        height: auto;
         display: flex;
         flex-flow: row nowrap;
         width: 100%;
         position: fixed;
-        background-color: $black;
         background-color: $black;
 
         @include tablet {

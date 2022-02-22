@@ -1,14 +1,25 @@
 <template>
   <div>
     <div class="gallery_wrapper">
+      <no-ssr>
         <Flickity ref="flickity" :options="flickityOptions">
           <div v-for="(image, index) in page.images" :key="index">
               <nuxt-img class="gallery_wrapper__image" :src="image.url" :alt="image.alt" />
           </div>
         </Flickity>
-    </div>    
-      <h1>{{page.title}}</h1>
-      <h1>{{page.contenttext}}</h1>
+      </no-ssr>
+    </div>
+    <div class="wrapper__ref">
+        <div class="site__title">
+            <h1 class="site__title--text">Referenzen</h1>
+        </div>  
+      <div class="wrapper__small">
+        <div class="container">  
+          <h1>{{page.title}}</h1>
+          <div class="intro text__big" v-html="page.contenttext"></div>
+        </div>
+      </div>  
+    </div>
   </div>
 </template>
 
