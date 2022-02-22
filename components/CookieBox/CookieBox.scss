@@ -10,7 +10,7 @@
     align-items: center;
     width: auto;
     height: 45px;
-    background-color: $white;
+    background-color: $black;
     top: 5em;
     left: 0;
     right: 0;
@@ -19,6 +19,7 @@
     border-radius: 20px;
     padding: 0.25em;
     animation: pulse 1s ease-in infinite;
+    border: thin solid $white;
 
     @include tablet {
         flex-flow: row wrap;
@@ -83,9 +84,9 @@
         justify-content: center;
         align-items: center;
         width: auto;
-        background-color: $white;
-        border: thin solid $black;
-        color: $black;
+        background-color: $black;
+        border: thin solid $white;
+        color: $white;
         border-radius: 200px;
         padding-left: 0.5em;
         padding-right: 0.5em;
@@ -104,10 +105,10 @@
         }
 
         &:hover {
-            background-color: $white;
+            background-color: $black;
 
             .accept__text {
-                color: $black;
+                color: $white;
             }
         }
     }

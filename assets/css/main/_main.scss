@@ -53,6 +53,11 @@ body {
     &__ref {
         display: flex;
     }
+
+    #kon {
+        display: flex;
+        margin-top: 90px;
+    }
 }
 
 .site__title {
@@ -66,8 +71,8 @@ body {
     } 
   
     @include desktopXL {
-      display: block;
-  } 
+        display: block;
+    } 
   
     &--text {
       font-family: Industria LT Std, sans-serif;
@@ -77,5 +82,9 @@ body {
       opacity: 0.5;
       writing-mode: vertical-lr;
       transform: rotate(180deg);
+    }
+
+    &#kon {
+        margin-top: 90px;
     }
   }

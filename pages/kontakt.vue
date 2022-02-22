@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="wrapper__ref">
-      <div class="site__title">
+      <div class="site__title" id="kon">
           <h1 class="site__title--text">{{ page.title }}</h1>
       </div>
-      <div class="wrapper"> 
+      <div class="wrapper" id="kon"> 
         <Map />
       </div>  
     </div>
