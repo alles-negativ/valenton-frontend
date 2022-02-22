@@ -2,38 +2,26 @@
 @use "assets/css/main/breakpoints" as *;
 
 .site__title {
-    display: none;
-    position: absolute;
-    left: 0;
-    z-index: -1;
+  display: none;
+  left: 0;
+  z-index: -1;
+  width: 16vw;
 
-    &#home {
-      margin-top: 5em;
-    }
-
-    @include desktop {
-      display: block;
-  }
-
-    @include desktopXL {
+  @include desktop {
       display: block;
   } 
 
-    &--text {
-      font-family: Industria LT Std, sans-serif;
-      font-weight: 500;
-      font-size: 20vw;
-      text-transform: uppercase;
-      opacity: 0.5;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-    }
-}
+  @include desktopXL {
+    display: block;
+} 
 
-.image__hero {
-  display: flex;
-  height: 400px;
-  width: 100%;
-  background-color: grey;
-  margin-bottom: 5em;
+  &--text {
+    font-family: Industria LT Std, sans-serif;
+    font-weight: 500;
+    font-size: 20vw;
+    text-transform: uppercase;
+    opacity: 0.5;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
 }
