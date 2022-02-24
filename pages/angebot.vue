@@ -6,8 +6,7 @@
           <h1 class="site__title--text">{{ page.title }}</h1>
       </div>  
       <div class="wrapper"> 
-        <Planung />
-        <Installation />
+        <Anlistung />
       </div>
     </div>
   </main>

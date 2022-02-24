@@ -10,6 +10,7 @@ import metaTags from "../../mixins/metaTags";
 
 export default {
   mixins: [metaTags],
+  scrollToTop: true,
   
   async asyncData({ app, $kirby }) {
     const { json: page } = await $kirby.find({
