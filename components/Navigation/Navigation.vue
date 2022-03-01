@@ -13,6 +13,13 @@
                             <p @click="closeNavigation" class="text__menu">{{ element.title }}</p>
                         </nuxt-link>
                     </li>
+                    <li class="item__kus">
+                        <nuxt-link :to="('/kesslerundsohne')">
+                        <!-- This is trash fix this / hover with two items currently and position absolute-->
+                            <img @click="closeNavigation" class="item__kus--logo" src="/kus_logo_immer.svg" alt="Logo Kessler und Söhne">
+                            <img @click="closeNavigation" class="item__kus--logored" src="/kus_logo_immer_red.svg" alt="Logo Kessler und Söhne">
+                        </nuxt-link>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -4,7 +4,7 @@
             <h1 class="acc__title" v-if="element.type == 'heading'"> {{ element.content.text }}</h1>
             <Accordion v-if="element.type == 'accordion'">
                 <template v-slot:title>
-                    <p class="text__big"> {{ element.content.title }} </p>
+                    <p class="text"> {{ element.content.title }} </p>
                 </template>
                 <template v-slot:body>
                     <div class="text" slot="contenttext" v-html="element.content.text"></div>

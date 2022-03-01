@@ -19,6 +19,7 @@ $marginHeaderLarge: 5em;
 $marginHeaderXLarge: 5em;
 
 $logosize: 100px;
+$logosizekus: 65px;
 
 body {
     background-color: $black;
@@ -82,6 +83,7 @@ body {
       opacity: 0.5;
       writing-mode: vertical-lr;
       transform: rotate(180deg);
+      white-space: nowrap;
     }
 
     &#kon {

@@ -58,6 +58,40 @@ nav {
         &:hover {
             transition: 0.2s;
         }
+
+        &__kus {
+            align-self: center;
+            justify-self: center;
+
+            // can be done better below hower with two items
+            // see "Navigation.vue"
+
+            &--logo {
+                position: absolute;
+                display: block;
+                width: 200px;
+                height: auto;
+                z-index: 999;
+                top: 30px;
+                right: 100px;
+
+                &:hover {
+                    display: none
+                }
+            }
+
+            &--logored {
+                position: absolute;
+                width: 200px;
+                height: auto;
+                top: 30px;
+                right: 100px;
+
+                &:hover {
+                    display: block;
+                }    
+            }
+        }
     }
 }
 
