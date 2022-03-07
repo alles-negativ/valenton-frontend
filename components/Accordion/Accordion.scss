@@ -6,12 +6,11 @@
 @use "assets/css/main/main" as *;
 
 .accordion {
-    width: 35%;
-    border: thin solid $white;
-    margin-top: 5px;
+    width: 100%;
+    border-bottom: thin solid $white;
+    border-top: thin solid $white;
+    margin-top: -1px;
     cursor: pointer;
-    // padding-top: $contentpadding;
-    // padding-bottom: $contentpadding;
 
         &__title {
             display: flex;
@@ -22,15 +21,39 @@
             height: auto;
             padding-top: $contentpadding;
             padding-bottom: $contentpadding;
-            padding-right: 10px;
-            padding-left: 10px;
             cursor: pointer;
-            text-transform: uppercase;
+            // text-transform: uppercase;
+
+            @include tablet {
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            @include desktop {
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            @include desktopXL {
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .text {
+                font-family: sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 24px;
+                text-decoration: none;
+                color: $white;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+            }        
 
             .right {
               height: 23px;
               width: 10px;
-              margin-right: 5px;
+              margin-right: 3em;
               z-index: -1;
             }
 
@@ -41,6 +64,22 @@
               color: $white;
               z-index: -1;
         }
+            .text {
+                padding-left: 20px;
+                letter-spacing: 0.75px;
+
+                @include tablet {
+                    padding-left: 30px;
+                }
+        
+                @include desktop {
+                    padding-left: 3em;
+                }
+        
+                @include desktopXL {
+                    padding-left: 3em;
+                }
+            }    
     }
 
 .rotate {
