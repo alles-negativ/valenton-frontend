@@ -2,16 +2,24 @@
 @use "assets/css/main/breakpoints" as *;
 @use "assets/css/main/main" as *;
 
-.wrapper {
+.wrapper__map {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     margin-top: 100px;
 
+    @include mobile {
+        flex-flow: row wrap;
+    }
+
     .address {
         display: flex;
         flex-flow: column wrap;
         width: 40%;
+
+        @include mobile {
+            width: 100%;
+        }
 
         a {
             margin-bottom: 0.5em;

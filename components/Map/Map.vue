@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper__map">
       <div class="address">
         <a class="text text__big" href="mailto:hello@alles-negativ-fake.ch"><h3>{{ contact.contactmail }}</h3></a>
         <a class="text text__big" href="tel:+4733378901"><h3>{{ contact.contacttel }}</h3></a>
