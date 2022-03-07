@@ -67,29 +67,22 @@ nav {
             // see "Navigation.vue"
 
             &--logo {
-                position: absolute;
                 display: block;
-                width: 200px;
+                width: 18vw;
                 height: auto;
                 z-index: 999;
-                top: 30px;
-                right: 100px;
 
-                &:hover {
-                    display: none
+                @include tablet {
+                    width: 18vw;
                 }
-            }
-
-            &--logored {
-                position: absolute;
-                width: 200px;
-                height: auto;
-                top: 30px;
-                right: 100px;
-
-                &:hover {
-                    display: block;
-                }    
+        
+                @include desktop {
+                    width: 14vw;
+                }
+        
+                @include desktopXL {
+                    width: 12vw;
+                }
             }
         }
     }
@@ -97,6 +90,14 @@ nav {
 
 p {
     padding-left: 30px;
+
+    @include mobile {
+        padding-left: 0px
+    }
+
+    @include tablet {
+        padding-left: 0px
+    }
 }
 
 nav li a {
