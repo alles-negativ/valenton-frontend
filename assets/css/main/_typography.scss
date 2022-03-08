@@ -194,26 +194,11 @@ p {
 
 span {
     font-family: sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 18px;
+    text-decoration: none;
     color: $white;
-
-    @include tablet {
-        font-size: 45px;
-        line-height: 65px;
-    }
-
-    @include desktop {
-        font-size: 55px;
-        line-height: 70px;
-    }
-    
-    @include desktopXL {
-        font-size: 55px;
-        line-height: 70px;
-    } 
 }
 
 a {
