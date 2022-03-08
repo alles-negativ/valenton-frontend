@@ -109,7 +109,7 @@ export default {
   image: {
     domains: [
       'http://localhost:8888',
-      'https://valentonbackend.carlonatter.ch'
+      'https://backend.valenton.ch'
     ]
   }
 }
