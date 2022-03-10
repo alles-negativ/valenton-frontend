@@ -1,5 +1,6 @@
 @use "assets/css/main/colors" as *;
 @use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
 
 nav {
     position: absolute;
@@ -46,7 +47,7 @@ nav {
         top: 30px;
         right: 100px;
         width: 200px;
-    } 
+    }    
 
     .item {
         display: flex;  
@@ -92,6 +93,7 @@ nav .switch li {
         background-color: $gray;
     }
 }
+
 p {
     padding-left: 30px;
 

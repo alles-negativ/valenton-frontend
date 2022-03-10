@@ -4,7 +4,7 @@
     <nuxt-link class="logo__link" to="/">
         <img class="header__links--logo" src="/kus_logo.svg" alt="Logo Kessler und Söhne">
     </nuxt-link>
-    <Navigation />  
+    <Navigationkus />  
   </div>
 </div>
 </template>

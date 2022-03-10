@@ -4,13 +4,8 @@
             <div class="nav">
                 <ul>
                     <li class="item">
-                        <nuxt-link :to="('/')">
+                        <nuxt-link :to="('/kesslerundsohne')">
                             <p @click="closeNavigation" class="text__menu">FIRMA</p>
-                        </nuxt-link>
-                    </li>
-                    <li class="item" v-for="element in menu_elements" :key="element.id">
-                        <nuxt-link :to="('/' + element.slug)">
-                            <p @click="closeNavigation" class="text__menu">{{ element.title }}</p>
                         </nuxt-link>
                     </li>
                     <div class="switch">
@@ -38,7 +33,7 @@
 
 <script>
 export default {
-    name: 'Navigation',
+    name: 'Navigationkus',
 
     data() {
         return { 
@@ -90,5 +85,5 @@ export default {
 </script>
   
 <style lang="scss" scoped>
-    @use "Navigation";
+    @use "Navigationkus";
 </style>
