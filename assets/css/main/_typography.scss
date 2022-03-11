@@ -6,27 +6,27 @@ Global definitions of typography
 @use "colors" as *;
 
 h1 {
-    font-family: sans-serif;
+    font-family: Industria LT Std;
     font-weight: 700;
     font-style: normal;
-    font-size: 35px;
+    font-size: 45px;
     color: $white;
 
   @include tablet {
-        font-size: 40px;
+        font-size: 60px;
   }
 
   @include desktop {
-        font-size: 55px;
+        font-size: 75px;
   }
 
   @include desktopXL {
-        font-size: 55px;
+        font-size: 75px;
   }
 }
 
 h2 {
-    font-family: sans-serif;
+    font-family: Arial Narrow;
     font-weight: 700;
     font-style: normal;
     font-size: 50px;
@@ -49,7 +49,7 @@ h2 {
 }
 
 h3 {
-    font-family: sans-serif;
+    font-family: Arial Narrow;
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
@@ -81,14 +81,14 @@ div > p {
 }
 
 p {
-    font-family: sans-serif;
+    font-family: Arial Narrow;
     font-style: normal;
     line-height: 26px;
 }
 
 .text {
-    font-family: sans-serif;
-    font-weight: 400;
+    font-family: Arial Narrow;
+    font-weight: normal;
     font-style: normal;
     font-size: 18px;
     text-decoration: none;
@@ -162,22 +162,22 @@ p {
     }
 
     &__menu {
-        font-family: Industria LT Std, sans-serif;
+        font-family: Industria LT Std, Arial Narrow;
         font-weight: 500;
         font-size: 18vw;
         line-height: normal;
         text-transform: uppercase;
 
         @include tablet {
-            font-size: 18vw;
+            font-size: 17vw;
         }
 
         @include desktop {
-            font-size: 14vw;
+            font-size: 13vw;
         }
 
         @include desktopXL {
-            font-size: 12vw;
+            font-size: 11vw;
         }
     }
 
@@ -193,7 +193,7 @@ p {
 }
 
 span {
-    font-family: sans-serif;
+    font-family: Arial Narrow;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
