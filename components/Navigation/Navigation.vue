@@ -13,18 +13,11 @@
                             <p @click="closeNavigation" class="text__menu">{{ element.title }}</p>
                         </nuxt-link>
                     </li>
-                    <div class="switch">
-                        <li>
-                            <nuxt-link class="item__kus" :to="('/')">
-                                <img @click="closeNavigation" class="item__kus--logo" src="/logo.svg" alt="Logo Valenton">
-                            </nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link class="item__kus" :to="('/kesslerundsohne')">
-                                <img @click="closeNavigation" class="item__kus--logo" src="/kus_logo_immer.svg" alt="Logo Valenton">
-                            </nuxt-link>
-                        </li>
-                    </div>
+                    <li class="item">
+                        <nuxt-link class="item__kus" :to="('/kesslerundsohne')">
+                            <img @click="closeNavigation" class="item__kus--logo" src="/kus_logo_immer.svg" alt="Logo Valenton">
+                        </nuxt-link>
+                    </li>
                 </ul>
             </div>
         </div>

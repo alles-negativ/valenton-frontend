@@ -36,18 +36,6 @@ nav {
         }
     }
 
-    .switch {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        border: 3px solid $white;
-        top: 30px;
-        right: 100px;
-        width: 200px;
-    } 
-
     .item {
         display: flex;  
         width: auto;
@@ -56,7 +44,7 @@ nav {
         margin-bottom: 15px;
 
         @include tablet {
-            height: 13vw;
+            height: 12vw;
         }
 
         @include desktop {
@@ -64,7 +52,7 @@ nav {
         }
 
         @include desktopXL {
-            height: 10vw;
+            height: 8.5vw;
         }
 
         &:hover {
@@ -72,26 +60,34 @@ nav {
         }
 
         &__kus {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 97px;
-            height: 100px;
-            padding: 12px;
-          
+            padding-left: 36px;
+            
+            @include mobile {
+                padding-left: 0px;
+            }
+
+            @include tablet {
+                padding-left: 3px;
+            }
             &--logo {
-                width: 65px;
-                z-index: 999;
+                width: 75px;
+
+                @include tablet {
+                    width: 12vw;
+                }
+        
+                @include desktop {
+                    width: 10vw;
+                }
+        
+                @include desktopXL {
+                    width: 8.5vw;
+                }
             }
         }
     }
 }
 
-nav .switch li {
-    a.nuxt-link-exact-active {
-        background-color: $gray;
-    }
-}
 p {
     padding-left: 30px;
 
