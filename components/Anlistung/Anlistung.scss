@@ -7,15 +7,23 @@
 }
 
 .acc__title {
-    // font-size: 7.5vw;
     text-transform: uppercase;
-    margin-top: 1em;
-    margin-bottom: 1em;
-
 }
 
-.container {
-    display: flex;
+.content {
+    .container {
+        display: flex;
+
+        &:first-child {
+            .container__block {
+                margin-top: 0em;
+            }
+        }
+    
+        &__block{
+            margin-top: 3.5em;
+        }
+    }
 }
 
 // ::v-deep selector for individual styling of the accordion (when using scoped styles)
