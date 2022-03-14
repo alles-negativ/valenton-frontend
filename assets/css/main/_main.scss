@@ -52,7 +52,20 @@ body {
     }
 
     &__ref {
+        margin-top: 1em;
         display: flex;
+
+        @include tablet {
+            margin-top: 3em;
+          }
+    
+          @include desktop {
+            margin-top: 3em;
+          }
+    
+          @include desktopXL {
+            margin-top: 3em;
+          }
     }
 
     #kon {

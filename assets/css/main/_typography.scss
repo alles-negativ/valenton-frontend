@@ -29,7 +29,7 @@ h2 {
     font-family: Arial Narrow;
     font-weight: 700;
     font-style: normal;
-    font-size: 50px;
+    font-size: 35px;
     color: $white;
 
     @include tablet {
@@ -52,7 +52,8 @@ h3 {
     font-family: Arial Narrow;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 35px;
     color: $white;
     letter-spacing: 0.6px;
 
@@ -61,11 +62,11 @@ h3 {
     }
 
     @include desktop {
-            font-size: 30px;
+        font-size: 30px;
     }
 
     @include desktopXL {
-            font-size: 30px;
+        font-size: 30px;
     }
 }
 
@@ -156,7 +157,7 @@ p {
     }
 
     &__footer {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 26px;
         font-weight: 600;
     }
@@ -169,7 +170,7 @@ p {
         text-transform: uppercase;
 
         @include tablet {
-            font-size: 17vw;
+            font-size: 16vw;
         }
 
         @include desktop {

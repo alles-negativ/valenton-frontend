@@ -58,20 +58,14 @@ $gridMedium: calc(40vw - 15px);
         width: 80vw;
 
         @include tablet {
-            max-width: 1000px;
-            min-width: 200px;
             width: $gridMedium;
         }
     
-        @include desktop {
-            max-width: 1000px;
-            min-width: 200px;
+        @include desktop {  
             width: $gridLarge;
         }
     
         @include desktopXL {
-            max-width: 1000px;
-            min-width: 200px;
             width: $gridLarge;
         }
     }

@@ -1,6 +1,8 @@
 <template>
     <div class="intro">
-        <h2>{{ herohome.contenttitle }}</h2>
+        <div class="intro__title">
+            <h2>{{ herohome.contenttitle }}</h2>
+        </div>
         <div class="intro__text" v-html="herohome.contenttext"></div>
         <div class="intro__hero" v-for="image in herohome.images" :key="image.key">
               <nuxt-img class="gallery_wrapper__image" :src="image.url" :alt="image.alt" />
