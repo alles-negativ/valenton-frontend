@@ -1,0 +1,97 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+
+.gallery_wrapper {
+    height: 300px;
+    margin-bottom: 20px;
+
+        @include tablet {
+            height: 400px;
+        }
+    
+        @include desktop {
+            height: 500px;
+        }
+    
+        @include desktopXL {
+            height: 500px;
+        }
+
+    &__image {
+        height: 300px;
+
+        @include tablet {
+            height: 400px;
+        }
+    
+        @include desktop {
+            height: 500px;
+        }
+    
+        @include desktopXL {
+            height: 500px;
+        }
+    }
+
+    ::v-deep.flickity-enabled {
+        z-index: -1;
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-top: 1em;
+
+    @include tablet {
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2.5em;
+        margin-top: 1em;
+    }
+
+    @include desktop {
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2.5em;
+        margin-top: 1em;
+    }
+
+    @include desktopXL {
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2.5em;
+        margin-top: 1em;
+    }
+
+    span {
+        color: $red;
+    }
+}
+
+.site__title {
+    display: none;
+    left: 0;
+    z-index: -1;
+    width: 16vw;
+
+    @include desktop {
+        display: block;
+    } 
+
+    @include desktopXL {
+      display: block;
+  } 
+
+    &--text {
+      font-family: Industria LT Std, sans-serif;
+      font-weight: 500;
+      font-size: 20vw;
+      text-transform: uppercase;
+      opacity: 0.5;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+    }
+}

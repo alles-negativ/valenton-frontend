@@ -1,38 +1,42 @@
 <template>
-    <div class="container">
-        <ul class="container__columns">
-            <li v-for="article in articles" :key="article.id" class="content">
-                <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
-                <div class="content__info">
-                    <h3 class="title">{{ article.title }}</h3>
-                    <div class="text" v-html="article.contenttext"></div>
-                    <a class="text mail" href="mailto:hello@alles-negativ-fake.ch">{{ article.contactmail }}</a>
+    <div>
+        <div class="wrapper__ref">
+            <div class="wrapper"> 
+                <div class="container">
+                    <div v-for="reference in references" :key="reference.id">
+                        <nuxt-link class="content" :to="$route.path + '/' + reference.slug">
+                            <div class="content__info">
+                                <div class="content__info--text">
+                                    <h3>{{ reference.title }}</h3>
+                                </div> 
+                            </div>
+                            <nuxt-img class="content__image" :src="reference.images[0].url" :alt="reference.images[0].alt" />
+                        </nuxt-link>
+                    </div>
                 </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </div>
+    </div>    
 </template>
 
 <script>
 export default {
-    name: 'People',
+    name: 'Referenzen',
 
     data() {
         return {
-            articles: [],
+            references: []
         }
     },
-
     async fetch() {
         const { json: data } = await this.$kirby.find({
             "query": "page('kesslerundsohne').children",
             "select": {
                 "title": true,
-                "date": true,
                 "introtext": true,
                 "contenttext": true,
-                "contactmail": true,
-                "contentimage": true,
+                "slug": true,
+                "referenceimages": true,
                 "images": {
                     "query": 'page.files',
                     "select": {
@@ -43,7 +47,7 @@ export default {
                 }
             }
         })
-        this.articles = data
+        this.references = data
     }
 }
 </script>

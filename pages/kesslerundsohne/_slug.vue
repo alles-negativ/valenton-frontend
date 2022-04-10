@@ -11,20 +11,12 @@
     </div>
     <div class="wrapper__ref">
         <div class="site__title">
-            <h1 class="site__title--text">Referenzen</h1>
+            <h1 class="site__title--text">Kessler und Söhne</h1>
         </div>  
       <div class="wrapper">
           <h1>{{page.title}}</h1>
           <div class="container"> 
             <div class="text__ref" v-html="page.contenttext"></div>
-            <div class="container__info">
-              <span>Kunde</span>
-              <div class="text__big" v-html="page.clienttext"></div>
-              <span>Jahr</span>
-              <div class="text__big" v-html="page.yeartext"></div>
-              <span>Kategorie</span>
-              <div class="text__big" v-html="page.category"></div>
-            </div>
         </div>
       </div>  
     </div>
@@ -33,7 +25,7 @@
 
 <script>
   export default {
-    scrollToTop: true,
+      scrollToTop: true,
 
     data() {
         return {
@@ -58,8 +50,6 @@
             "title": true,
             "contenttext": true,
             "clienttext": true,
-            "yeartext": true,
-            "category": true,
             "referenceimages": true,
             "images": {
               "query": 'page.files',
@@ -77,5 +67,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @use "Refslug";
+    @use "Kusslug";
 </style>
