@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrapper__ref">
+    <div class="wrapper__ref--kon">
       <div class="site__title" id="kon">
           <h1 class="site__title--text">{{ page.title }}</h1>
       </div>

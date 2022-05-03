@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="wrapper__ref">
-            <div class="site__title">
+        <div class="wrapper__ref--kon">
+            <div id="ref" class="site__title">
                 <h1 class="site__title--text">Referenzen</h1>
             </div>
             <div class="wrapper"> 
