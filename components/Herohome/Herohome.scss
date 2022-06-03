@@ -40,6 +40,17 @@ $headerHeight: 105px;
       }
     }
 
+    &__text {
+      max-width: 2000px;
+      text-align: center;
+      padding-right: 3em;
+      padding-left: 3em;
+
+      @include desktopXL {
+        font-size: 24px;
+      }
+    }
+
     &__hero {
       display: flex;
       position: absolute;

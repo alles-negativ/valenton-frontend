@@ -111,8 +111,6 @@ img {
     }
 
     @include desktopXL {
-        max-width: 1000px;
-        min-width: 200px;
         width: $gridLarge;
         height: $gridLarge;
     }

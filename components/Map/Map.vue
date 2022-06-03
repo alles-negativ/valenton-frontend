@@ -1,8 +1,8 @@
 <template>
     <div class="wrapper__map">
       <div class="address">
-        <a class="text text__big" href="mailto:hello@alles-negativ-fake.ch"><h3>{{ contact.contactmail }}</h3></a>
-        <a class="text text__big" href="tel:+4733378901"><h3>{{ contact.contacttel }}</h3></a>
+        <a class="text text__big" href="mailto:info@valenton.ch"><h3>{{ contact.contactmail }}</h3></a>
+        <a class="text text__big" href="tel:+41816300260"><h3>{{ contact.contacttel }}</h3></a>
         <div v-html="contact.contacttext"></div>
       </div>
       <div class="map" v-html="contact.mapframe"></div>

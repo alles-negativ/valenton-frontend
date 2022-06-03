@@ -6,9 +6,7 @@
             <div class="site__title" id="home">
                 <h1 class="site__title--text">Kessler und Söhne</h1>
             </div>
-            <div class="wrapper"> 
                 <Kuspost />
-            </div>
             </div>    
         </div>  
       <Kesslerundsohne />

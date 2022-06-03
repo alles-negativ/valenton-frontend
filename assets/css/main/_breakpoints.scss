@@ -5,7 +5,7 @@ $phoneXS-width: 379.98px;
 $phone-width: 767.97px;
 $tablet-width: 767.98px;
 $desktop-width: 1199.98px;
-$desktopXL-width: 1440.02px;
+$desktopXL-width: 1512.02px;
 
 @mixin mobileXS {
   @media (max-width: #{$phoneXS-width}) {
