@@ -97,15 +97,11 @@ img {
     height: 80vw;
 
     @include tablet {
-        max-width: 1000px;
-        min-width: 200px;
         width: $gridMedium;
         height: $gridMedium;
     }
 
     @include desktop {
-        max-width: 1000px;
-        min-width: 200px;
         width: $gridLarge;
         height: $gridLarge;
     }
