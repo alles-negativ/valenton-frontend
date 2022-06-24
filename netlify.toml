@@ -5,3 +5,19 @@
   force = true # COMMENT: ensure that we always redirect
   headers = {X-From = "Netlify"}
   signed = "API_SIGNATURE_TOKEN"
+
+[[redirects]]
+  from = "https://www.accordion.ch"
+  to = "https://www.valenton.ch/kesslerundsohne"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
+  signed = "API_SIGNATURE_TOKEN"
+
+[[redirects]]
+  from = "https://www.accordion.ch"
+  to = "https://www.valenton.ch/kesslerundsohne"
+  status = 403
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
+  signed = "API_SIGNATURE_TOKEN"
