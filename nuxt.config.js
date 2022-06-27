@@ -35,7 +35,7 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:title', property: 'og:title', content: 'Valenton' },
       { hid: 'og:description', property: 'og:description', content: 'Valenton bietet Beratung, Planung und Installation von elektroakustischen Anlagen.' },
-      { hid: 'og:image', property: 'og:image', content: 'https://linktofrontend/alles-negativ-static-image.jpg' },
+      { hid: 'og:image', property: 'og:image', content: 'https://valenton.ch/valenton-static-image.jpeg' },
       { hid: 'og:image:width', property: 'og:image:width', content: '2121' },
       { hid: 'og:image:height', property: 'og:image:height', content: '1414' },
       { hid: 'og:image:alt', property: 'og:image:alt', content: 'Example alt text for og:image' },
