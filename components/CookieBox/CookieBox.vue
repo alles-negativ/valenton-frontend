@@ -3,11 +3,6 @@
     <cookie-consent>
       <template slot="message">
         <p>Diese Website verwendet Cookies</p>
-        <a class="btn btn-link" href="/my-cookies">
-          <p>
-            mehr
-          </p>
-        </a>
       </template>
       <template slot="button">
         <div class="accept__button">
