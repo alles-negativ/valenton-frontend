@@ -6,7 +6,7 @@
                 <div class="content__info">
                     <h3 class="title">{{ article.title }}</h3>
                     <div class="text" v-html="article.contenttext"></div>
-                    <a class="text mail" href="mailto:hello@alles-negativ-fake.ch">{{ article.contactmail }}</a>
+                    <a class="text mail" :href="`mailto:` + article.contactmail">{{ article.contactmail }}</a>
                 </div>
             </li>
         </ul>
